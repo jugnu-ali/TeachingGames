@@ -355,7 +355,8 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: 2599a300e0788ce41acdb7766ab7fb17, type: 2}
   - {fileID: 11400000, guid: 1f23a316453ebe448be892db5bc5e786, type: 2}
-  timeBetweenWaves: 2
+  timeBetweenWaves: 0
+  isLooping: 1
 --- !u!4 &1148619532
 Transform:
   m_ObjectHideFlags: 0
@@ -371,60 +372,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1417260063 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1924414105286734522, guid: e1771544eca7a314c9c1012b73c0094f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3117115093579541673}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1417260064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417260063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1abbefebb4fad994babb6b9f4a8fa639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  paddingLeft: 0.5
-  paddingRight: 0.5
-  paddingTop: 5
-  paddingBottom: 2
---- !u!114 &1417260065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417260063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: fa5833e73afa4c64296221b05101f3b3,
-    type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1001 &3117115093579541673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +379,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6806814669196812769, guid: e1771544eca7a314c9c1012b73c0094f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 468244952715793691, guid: e1771544eca7a314c9c1012b73c0094f,
+        type: 3}
+      propertyPath: isFiring
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 998910148573612916, guid: e1771544eca7a314c9c1012b73c0094f,
         type: 3}
       propertyPath: m_RootOrder

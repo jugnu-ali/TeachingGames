@@ -19,6 +19,13 @@ namespace MySpaceShooter
         [SerializeField] float paddingTop;
         [SerializeField] float paddingBottom;
 
+        Shooter shooter;
+
+        private void Awake()
+        {
+            shooter = GetComponent<Shooter>();
+        }
+
         private void Start()
         {
             InitBounds();
@@ -53,7 +60,15 @@ namespace MySpaceShooter
         private void OnMove(InputValue value)
         {
             rawInput = value.Get<Vector2>();
-            Debug.Log(rawInput);
+            //Debug.Log(rawInput);
+        }
+
+        void OnFire(InputValue value)
+        {
+            if(shooter != null)
+            {
+                shooter.isFiring = value.isPressed;
+            }
         }
     }
 }
