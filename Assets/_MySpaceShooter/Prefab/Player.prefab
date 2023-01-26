@@ -58,7 +58,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &1417260064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a28f903b45767c4c833e77a2af83733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  isPlayer: 1
+  health: 100
+  score: 0
   hitEffect: {fileID: 198924067557857112, guid: 2dd0bdb7830e6644da169b32252dca96,
     type: 3}
   applyCameraShake: 1
@@ -159,7 +161,7 @@ MonoBehaviour:
   useAI: 0
   firingRateVarience: 0.15
   minimumFiringRate: 0.1
-  isFiring: 1
+  isFiring: 0
 --- !u!1 &7343492505616557475
 GameObject:
   m_ObjectHideFlags: 0

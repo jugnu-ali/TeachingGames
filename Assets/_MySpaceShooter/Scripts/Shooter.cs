@@ -20,6 +20,13 @@ public class Shooter : MonoBehaviour
 
     Coroutine firingCoroutine;
 
+    AudioPlayer audioPlayer;
+
+    private void Awake()
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
+
     void Start()
     {
         if(useAI)
@@ -60,7 +67,9 @@ public class Shooter : MonoBehaviour
                 rb.velocity = transform.up *  projectileSpeed;
             }
 
-            Destroy(gameObject, projectileLifetime);
+            Destroy(obj, projectileLifetime);
+
+            audioPlayer.PlayShootingClip();
             
             if(useAI)
             {
