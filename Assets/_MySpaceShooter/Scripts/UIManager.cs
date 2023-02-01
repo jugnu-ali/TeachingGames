@@ -12,11 +12,11 @@ public class UIManager : MonoBehaviour
 
     [Header("Score")]
     [SerializeField] TextMeshProUGUI scoreText;
-    ScoreKeeper scoreKeeper;
+    //ScoreKeeper scoreKeeper;
 
     private void Awake()
     {
-        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        //scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
 
     // Start is called before the first frame update
@@ -29,6 +29,6 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         healthSlider.value = playerHealth.GetHealth();
-        scoreText.text = scoreKeeper.GetCurrentScore().ToString("000000");
+        scoreText.text = ScoreKeeper.instance.GetCurrentScore().ToString("000000");
     }
 }

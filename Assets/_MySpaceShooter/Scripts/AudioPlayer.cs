@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
+    public static AudioPlayer instance = null;
+
     [Header("Shooting")]
     [SerializeField] AudioClip shootingClip;
     [SerializeField] [Range(0f, 1f)] float shootingVolume = 1f;
@@ -11,6 +13,19 @@ public class AudioPlayer : MonoBehaviour
     [Header("Damage")]
     [SerializeField] AudioClip damageClip;
     [SerializeField] [Range(0f, 1f)] float damageVolume = 1f;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     public void PlayShootingClip()
     {

@@ -6,6 +6,21 @@ public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] int currentScore = 0;
 
+    public static ScoreKeeper instance = null;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

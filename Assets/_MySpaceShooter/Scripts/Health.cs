@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
 
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager; 
 
     private void Awake()
     {
@@ -22,6 +23,8 @@ public class Health : MonoBehaviour
         audioPlayer = FindObjectOfType<AudioPlayer>();
 
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+
+        levelManager = FindObjectOfType<LevelManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
@@ -74,6 +77,7 @@ public class Health : MonoBehaviour
         else
         {
             Debug.Log("Called Die on Player");
+            LevelManager.instance.LoadGameOver();
         }
         Destroy(gameObject);
     }
