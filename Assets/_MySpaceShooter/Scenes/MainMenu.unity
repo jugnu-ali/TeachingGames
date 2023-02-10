@@ -415,10 +415,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845028946794342945, guid: 5485527479cf9b54e9d1ccfe82d5d3be,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 5845028946794342958, guid: 5485527479cf9b54e9d1ccfe82d5d3be,
         type: 3}
       propertyPath: moveSpeed.y
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845028947323263770, guid: 5485527479cf9b54e9d1ccfe82d5d3be,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5845028947323263771, guid: 5485527479cf9b54e9d1ccfe82d5d3be,
         type: 3}

@@ -44,6 +44,5 @@ public class PathFinder : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
 }

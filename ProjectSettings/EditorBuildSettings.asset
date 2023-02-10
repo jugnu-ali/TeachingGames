@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MySpaceShooter/Scenes/MainMenu.unity
     guid: 8416c11abb46ed04e99ca346aa73ef5e
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MySpaceShooter/Scenes/GamePlay.unity
     guid: 8d0d2bea489fbe842abd677c1fef4a7b
-  - enabled: 1
+  - enabled: 0
     path: Assets/_MySpaceShooter/Scenes/GameOver.unity
     guid: 5b2ef3742d7941d4e84725efb776210c
+  - enabled: 1
+    path: Assets/Snow Boarder/Scene/Level 1.unity
+    guid: 7ec48fe828b3e864897a6a90408048ba
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 5185071fdc1c514489bb5e641ccac4e0,
       type: 2}
